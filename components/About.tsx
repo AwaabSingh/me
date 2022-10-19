@@ -43,7 +43,7 @@ const About = ({ pageInfo }: Props) => {
           background
         </h4>
         <p className="md:text-base text-sm">
-          {pageInfo?.backgroundInformations}
+          {pageInfo?.backgroundInformation}
           {/* Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
           tempora sit a illum aperiam similique laborum quaerat eaque commodi
           suscipit repellendus blanditiis minus veniam numquam id nemo

@@ -23,25 +23,29 @@ const Skills = ({ skills  }: Props) => {
         Skills
       </h3>
 
-      <h3 className="absolute top-36 uppercase tracking-[3px]  text-gray-500 text-sm">
+      <h3 className="absolute top-36 uppercase tracking-[3px]  text-gray-500 text-xs md:text-sm">
         {" "}
-        Hover over a skill for currency proficiency
+        CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK
       </h3>
 
       <motion.div
         initial={{
-          x: 200,
+          x: -200,
           opacity: 0,
         }}
-        transition={{ duration: 1 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        whileInView={{
+          x: 0,
+          opacity: 1,
+        }}
+        viewport={{ once: true }}
+        transition={{
+          duration: 1.2,
+        }}
         className="grid grid-cols-4 md:grid-cols-5 xl:grid-cols-7 md:gap-5 gap-4 mt-28 xl:mt-24 overflow-hidden  "
       >
         {skills.map((skill, index) => (
           <Skill key={skill._id} skill={skill} />
         ))}
-
-       
       </motion.div>
     </motion.div>
   );
