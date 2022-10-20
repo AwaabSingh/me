@@ -1,12 +1,12 @@
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
-import Link  from 'next/link'
+import Link from "next/link";
 import { PageInfo } from "../typings";
 import { urlFor } from "../sanity";
 
 type Props = {
-  pageInfo: PageInfo
+  pageInfo: PageInfo;
 };
 
 const Hero = ({ pageInfo }: Props) => {
@@ -51,7 +51,7 @@ const Hero = ({ pageInfo }: Props) => {
           <Link href="#projects">
             <button className="heroButton">Projects</button>
           </Link>
-          <a href="/Abdul-Fattah Abdul-Kareem-CV.pdf" target="_blank">
+          <a href="/Abdul-Fattah Abdul-Kareem_CV.pdf" target="_blank">
             <button className="heroButton">Resume</button>
           </a>
         </div>
